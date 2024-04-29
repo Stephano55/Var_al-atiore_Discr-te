@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1714410225 source:d:\étude\programme c\looibinexo2_8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

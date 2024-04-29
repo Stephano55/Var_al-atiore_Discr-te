@@ -33,20 +33,20 @@ double exponentielle(double x, int n) {
 double calculProba(int k){
     int nombre;
     int nbrPages, nbrErreur;
-    double x = -lamda(nbrPages, nbrErreur)*(lamda(nbrPages, nbrErreur)/factoriel(k));
-    int n = 10;
-    printf("Entrez le nombre des pages :\n");
+     printf("Entrez le nombre des pages :\n");
     scanf("%d", &nbrPages);
      printf("Entrez le nombre des errurs :\n");
     scanf("%d", &nbrErreur);
+    double x = -lamda(nbrPages, nbrErreur)*(lamda(nbrPages, nbrErreur)/factoriel(k));
+    int n = 10;
     double proba = exponentielle(x, n);
     return proba;
 }
-int main(nombre)
+int main()
 {
     int k;
     printf("entrez k:");
     scanf("%d", &k);
-    printf("%d", calculProba(k));
+    printf("la probabilite ppour avoir %d erreur dans une page donnee est %f",k, calculProba(k));
     return 0;
 }
